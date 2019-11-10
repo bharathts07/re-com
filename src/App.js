@@ -35,7 +35,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header />
+        <Header currentUser={this.state.currentUser} />
         <Switch>
           {/* Using Switch avoids accidentally rendering multiple paths at the same endpoint that may be mathced by muliple routes */}
           <Route exact={true} path="/" component={HomePage} />
