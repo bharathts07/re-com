@@ -16,7 +16,7 @@ function App() {
       <Switch>
         {/* Using Switch avoids accidentally rendering multiple paths at the same endpoint that may be mathced by muliple routes */}
         <Route exact={true} path="/" component={HomePage} />
-        <Route path="/hats" component={HatsPage} />
+        <Route path="/shop/hats" component={HatsPage} />
       </Switch>
     </div>
   );
