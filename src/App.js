@@ -1,5 +1,5 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 
 import "./App.css";
 import HomePage from "./pages/homepage/homepage.component";
@@ -13,8 +13,11 @@ const HatsPage = () => (
 function App() {
   return (
     <div>
-      <Route exact={true} path="/" component={HomePage} />
-      <Route exact={true} path="/hats" component={HatsPage} />
+      <Switch>
+        {/* Using Switch avoids accidentally rendering multiple paths at the same endpoint that may be mathced by muliple routes */}
+        <Route exact={true} path="/" component={HomePage} />
+        <Route path="/hats" component={HatsPage} />
+      </Switch>
     </div>
   );
 }
