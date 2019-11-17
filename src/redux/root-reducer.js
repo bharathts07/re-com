@@ -10,8 +10,7 @@ import shopReducer from "./shop/shop-reducer";
 const persistConfig = {
   key: "root",
   storage,
-  // user reducer is persisited with firebase
-  whitelist: ["cart", "directory", "shop"]
+  whitelist: ["cart"]
 };
 
 const rootReducer = combineReducers({

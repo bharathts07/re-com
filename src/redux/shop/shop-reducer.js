@@ -1,10 +1,10 @@
 import SHOP_DATA from "./shop.data.jsx";
 
-const INITITAL_DATA = {
+const INITIAL_STATE = {
   collections: SHOP_DATA
 };
 
-const shopReducer = (state = INITITAL_DATA, action) => {
+const shopReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     default:
       return state;
