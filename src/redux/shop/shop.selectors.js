@@ -7,14 +7,13 @@ export const selectCollections = createSelector(
   shop => shop.collections
 );
 
-// converting from objects to arrays
 export const selectCollectionsForPreview = createSelector(
   [selectCollections],
   collections => Object.keys(collections).map(key => collections[key])
 );
 
-export const selectCollection = collectionUrlParams =>
+export const selectCollection = collectionUrlParam =>
   createSelector(
-    [selectCollection],
-    collections => collections[collectionUrlParams]
+    [selectCollections],
+    collections => collections[collectionUrlParam]
   );
