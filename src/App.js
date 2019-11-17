@@ -24,20 +24,20 @@ class App extends React.Component {
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async userAuth => {
       if (userAuth) {
-        const userRef = await createUserProfileDocument(userAuth)
+        const userRef = await createUserProfileDocument(userAuth);
         userRef.onSnapshot(snapShot => {
-            this.setState({
-              currentUser: {
-                id: snapShot.id,
-                ...snapShot.data()
-              }
-            })
-        })
+          this.setState({
+            currentUser: {
+              id: snapShot.id,
+              ...snapShot.data()
+            }
+          });
+        });
       } else {
         this.setState({
           // set current user to null or reset on logout
-          currentUser:userAuth
-        })
+          currentUser: userAuth
+        });
       }
     });
   }
@@ -49,7 +49,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header currentUser={this.state.currentUser} />
+        <Header />
         <Switch>
           {/* Using Switch avoids accidentally rendering multiple paths at the same endpoint that may be mathced by muliple routes */}
           <Route exact={true} path="/" component={HomePage} />
