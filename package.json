@@ -2,7 +2,7 @@
   "name": "re-com",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bharathts07.github.io/re-com/",
+  "homepage": "https://bharathts07.github.io/",
   "dependencies": {
     "firebase": "^7.3.0",
     "gh-pages": "^2.1.1",
