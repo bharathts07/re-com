@@ -4,14 +4,13 @@ import "firebase/auth";
 
 // Your web app's Firebase configuration
 var firebaseConfig = {
-  apiKey: "AIzaSyDlpVPRW4Sh6ZY-yZ-ymI9FIPCQRla35aA",
-  authDomain: "re-com.firebaseapp.com",
-  databaseURL: "https://re-com.firebaseio.com",
-  projectId: "re-com",
-  storageBucket: "re-com.appspot.com",
-  messagingSenderId: "747706809603",
-  appId: "1:747706809603:web:e049314fcc5e378e557d36",
-  measurementId: "G-CG7YJHNDP8"
+  apiKey: "AIzaSyCiJ4PEa3Zwn-uD3wnYW9IrRieuGHmgLtI",
+  authDomain: "re-com-3067e.firebaseapp.com",
+  databaseURL: "https://re-com-3067e.firebaseio.com",
+  projectId: "re-com-3067e",
+  storageBucket: "re-com-3067e.appspot.com",
+  messagingSenderId: "1042895791755",
+  appId: "1:1042895791755:web:4aa86f6ac4d05a3eae568e",
 };
 
 export const createUserProfileDocument = async (userAuth, additionalData) => {
@@ -29,7 +28,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
         displayName,
         email,
         createdAt,
-        ...additionalData
+        ...additionalData,
       });
     } catch (error) {
       console.log("error creating user", error.message);
