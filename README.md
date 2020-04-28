@@ -18,8 +18,10 @@ Built following a react tutorial
    4. Copy the config value and paste in src/firebase/firebase.utils.js : firebaseConfig
    5. If config for the first time then navigate to the firebase console
       1. Develop -> Authentication -> Set up sign-in method
-      2. Enable needed auth methods
+      2. Enable needed auth methods : sign in with gmail
       3. Create a firestore database in test mode with a root `users` collection
+      4. Enable sign in with Email/Password
+      5. Check console log if any error occurs.
 4. Setup stripe for payment and credit card mocking
 5. Run locally
 6. Deploy to heroku
