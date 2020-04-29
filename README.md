@@ -42,5 +42,6 @@ This code is live at https://re-com.herokuapp.com/
    3. heroku create *YOUR_APP_NAME* --buildpack mars/create-react-app
    4. git push heroku master
    5. Click on the deployed link at https://*YOUR_APP_NAME*.herokuapp.com/
+   6. To sign in properly with google add the above urls to the authorized domains in firebase-> authentication-> sign-in methods
    ```
 7. ENJOY!!!
