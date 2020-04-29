@@ -8,6 +8,7 @@ import "./index.css";
 import App from "./App";
 import { store, persistor } from "./redux/store";
 
+// Provider is a parent component to every other component in this React site
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>

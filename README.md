@@ -11,9 +11,9 @@ Built following a react tutorial
    npm install
    ```
 2. Setup images to work correctly
-3. Setup firestore database and related authentication
+3. Setup `firebase` database and related authentication
    1. npm install firebase (if not already done)
-   2. Create a new project
+   2. Create a new project for firebase
    3. Click project overview in the left panel and add Firebase to web app
    4. Copy the config value and paste in src/firebase/firebase.utils.js : firebaseConfig
    5. If config for the first time then navigate to the firebase console
@@ -22,7 +22,15 @@ Built following a react tutorial
       3. Create a firestore database in test mode with a root `users` collection
       4. Enable sign in with Email/Password
       5. Check console log if any error occurs.
-4. Setup stripe for payment and credit card mocking
+4. Setup `stripe` for payment and credit card mocking
+   1. npm install react-stripe-checkout (if not already installed)  
+   2. Signup or sign into stripe payments
+   3. In developers tab -> API keys -> copy publishable key
+   4. Paste info in src/components/stripe-button/stripe-button-component.jsx
 5. Run locally
-6. Deploy to heroku
+   ```
+   npm run develop
+   ```
+6. Deploy to `heroku`
+   1. TODO
 7. ENJOY!!!
